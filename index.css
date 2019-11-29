@@ -22,7 +22,7 @@ body[data-theme='dark']{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   left: 2%;
-  bottom: 2%;
+  bottom: 20%;
   cursor: pointer;
-  width: 60px;
+  width: 600px;
 }
