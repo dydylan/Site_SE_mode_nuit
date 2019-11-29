@@ -5,6 +5,7 @@ body{
   --clr-01: rgb(196, 196, 196);
   --clr-04: rgb(128, 191, 255);
 }  
+
 body{
   /*Note: On hésitais entre les "duos de couleurs" dispos, mais celui qu'on a choisis c'est (--clr-03) */
   background: var(--clr-03);
@@ -17,49 +18,6 @@ body[data-theme='dark']{
   --clr-04: rgb(0,0,0);
 }
 
-#articles{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-}
-
-#articles img, .texte{
-  border-radius: 5%;
-    
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  
-  transition:filter 600ms ease;
-  -webkit-transition: -webkit-filter 600ms ease;
-  
-  width: 75vh;
-}
-
-.social_network img{
-  border-radius: 50%;
-    
-  filter: brightness(0%);
-  -webkit-filter: brightness(0%);
-  
-  transition:filter 600ms ease;
-  -webkit-transition: -webkit-filter 600ms ease;
-}
-
-#articles :hover p, #articles :hover img, .social_network :hover img{
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
-
-.texte{
-  color : #cc66ff;
-  display: flex;
-  margin-bottom:5px;
-  align-items: center;
-  justify-content: center;
-}
-
 #switcher {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -67,28 +25,4 @@ body[data-theme='dark']{
   bottom: 2%;
   cursor: pointer;
   width: 60px;
-}
-
-footer{
-  display: flex;
-  flex-direction: column;
-  font-size: 150%; 
-}
-
-.social_network{
-  display: flex;
-  justify-content: center;
-}
-
-.social_network img{
-  padding-right:20px;
-  padding-left:20px;
-  width: 40px;
-}
-
-.texte_pied-de-page{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #cc66ff;
 }
