@@ -1,4 +1,4 @@
-let switcher = document.querySelector('#switcher');
+let switch = document.querySelector('#switch');
 let sun;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
  }
 }); 
 
-switcher.addEventListener('click', () => {
+switch.addEventListener('click', () => {
     if(!sun) {
         document.body.setAttribute('data-theme', 'dark');
         sun = true;
