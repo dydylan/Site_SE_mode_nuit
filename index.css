@@ -18,7 +18,7 @@ body[data-theme='dark']{
   --clr-04: rgb(0,0,0);
 }
 
-#switcher {
+#switch {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   left: 2%;
