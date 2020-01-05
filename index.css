@@ -15,11 +15,16 @@ body{
   background: var(--clr-03);
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+}
+
 #switch {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
-  left: 2%;
-  bottom: 2%;
+  left:1rem;
+  bottom: 1rem;
+  align-self: flex-end;
   cursor: pointer;
-  width: 60px;
 }
